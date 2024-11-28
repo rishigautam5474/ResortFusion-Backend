@@ -1,6 +1,6 @@
 import { optional, z } from "zod";
-import Transaction from "../models/User/transaction.model.js";
-import Booking from "../models/User/booking.model.js";
+import Transaction from "../models/transaction.model.js";
+import Booking from "../models/booking.model.js";
 
 const getSpecificTransaction = async (req, res) => {
   const { id } = req?.params;

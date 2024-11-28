@@ -1,7 +1,7 @@
-import Booking from "../models/User/booking.model.js";
+import Booking from "../models/booking.model.js";
 import { z } from "zod";
-import User from "../models/User/user.model.js";
-import Transaction from "../models/User/transaction.model.js";
+import User from "../models/user.model.js";
+import Transaction from "../models/transaction.model.js";
 
 const getAllBookingRoute = async (req, res) => {
   const booking = await Booking.find({});
